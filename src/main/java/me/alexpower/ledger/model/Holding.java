@@ -1,10 +1,11 @@
-package me.alexpower.ledger;
+package me.alexpower.ledger.model;
 
 import java.math.BigDecimal;
 import java.util.Collection;
-import java.util.List;
 
-public interface Holding {
+public interface Holding extends UniquelyIdentified {
+
+  HoldingKey getHoldingKey();
 
   BigDecimal getQuantity();
 
